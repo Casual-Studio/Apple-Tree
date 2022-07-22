@@ -4,7 +4,6 @@ public class TreeGrowing : MonoBehaviour
 {
     [SerializeField] private Vector3 treePos;
 
-    [SerializeField] private int stageOfTree = 0;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private GameObject nextTree;
     void Start()

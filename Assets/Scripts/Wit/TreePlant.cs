@@ -4,6 +4,7 @@ public class TreePlant : MonoBehaviour
 {
     [SerializeField] Vector3 markPos;
 
+    [SerializeField] Save saveClass;
     [SerializeField] GameManager gameManager;
     [SerializeField] GameObject seedPrefab;
     void Start()
@@ -23,7 +24,7 @@ public class TreePlant : MonoBehaviour
             //—оздаю обьект, уменьшаю опыт на 100, мен€ю текст, удал€ю обьект
             Instantiate(seedPrefab, markPos, Quaternion.Euler(-90,0,0), transform.parent);
             gameManager.XPChange(100, '-');
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

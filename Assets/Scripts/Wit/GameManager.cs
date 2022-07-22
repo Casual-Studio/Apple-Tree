@@ -23,6 +23,13 @@ public class GameManager : MonoBehaviour
             xpText.text = xpCount.ToString();
         }
     }
+    public void CurrencyRestore()
+    {
+        xpCount = 0;
+        xpText.text = xpCount.ToString();
+        appleCount = 0;
+        appleText.text = appleCount.ToString();
+    }
     //Функция для изменения яблок.
     public void AppleChange(int ammount, char addOrSub)
     {
