@@ -8,11 +8,14 @@ TagManager:
   - Tree
   - Interaction
   - GrowingTrees
+  - Mark
+  - Event
+  - Fire1
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Marks
   - Water
   - UI
   - 
